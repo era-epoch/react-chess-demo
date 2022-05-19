@@ -1,0 +1,66 @@
+{
+  "name": "react-client-demo",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://jacob-sahl.github.io/react-chess-demo", 
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.17",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "gh-pages": "^4.0.0",
+    "immer": "^9.0.14",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.0",
+    "react-uid": "^2.3.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
+    "typescript": "^4.5.4",
+    "web-vitals": "^2.1.2",
+    "websocket": "^1.0.34"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && cp build/index.html build/404.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/react-redux": "^7.1.24",
+    "@types/websocket": "^1.0.5",
+    "eslint": "^8.15.0",
+    "prettier": "^2.6.2"
+  }
+}

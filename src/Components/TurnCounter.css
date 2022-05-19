@@ -1,0 +1,18 @@
+.turn-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.turn-number-label {
+  font-size: 2rem;
+}
+
+.play-again {
+  padding-top: 1rem;
+  color: rgb(141, 23, 23);
+}
+
+.play-again:hover {
+  cursor: pointer;
+}

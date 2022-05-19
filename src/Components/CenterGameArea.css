@@ -1,0 +1,7 @@
+.center-game-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}

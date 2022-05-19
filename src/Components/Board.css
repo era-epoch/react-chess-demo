@@ -1,0 +1,12 @@
+.Board {
+  height: 90vh;
+  width: 90vh;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
