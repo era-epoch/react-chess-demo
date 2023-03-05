@@ -1,0 +1,36 @@
+.game-area-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 10rem;
+  flex: 1;
+  --info-border: 1px solid #111;
+  border-left: var(--info-border);
+  overflow: hidden;
+}
+
+.player-infos {
+  display: flex;
+  flex-direction: column;
+  border-bottom: var(--info-border);
+}
+
+.chat-container {
+  position: relative;
+}
+
+.chat-toggle {
+  position: relative;
+  z-index: 2;
+  background-color: lightgrey;
+  border-top: var(--info-border);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  user-select: none;
+}
+
+.chat-toggle:hover {
+  cursor: pointer;
+}

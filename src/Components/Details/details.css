@@ -1,0 +1,81 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.detail-title {
+  font-weight: bold;
+}
+
+.detail-list {
+  padding-left: 2rem;
+}
+
+.detail-icon {
+  padding-right: 0.5rem;
+}
+
+.text-detail-basic {
+  border: 2px solid gray;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.text-detail {
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.ability {
+  background-color: rgba(10, 124, 130, 0.1);
+  border: 2px solid var(--rune);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  transition: all 250ms ease;
+}
+
+.ability:hover {
+  cursor: pointer;
+}
+
+.ability.immediate:hover {
+  background-color: rgba(88, 225, 232, 0.6);
+}
+
+.ability.active {
+  background-color: rgba(88, 225, 232, 0.6);
+}
+
+.detail-rune-cost {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.emph {
+  font-weight: bold;
+}
+
+.rune {
+  color: var(--rune);
+}
+
+.immune {
+  color: blue;
+}
+
+.poison-text {
+  color: green;
+}
+
+.blood-bg {
+  background-color: rgba(255, 0, 0, 0.25);
+}

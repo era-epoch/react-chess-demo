@@ -1,0 +1,56 @@
+.game-area-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.game-dialogue-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+.game-dialogue-content {
+  padding: 1rem;
+  border: 2px solid grey;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.game-dialogue-title {
+  font-size: 2rem;
+}
+
+.pawn-promo-options {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.promo-op {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 2px solid gray;
+}
+
+.promo-op:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}

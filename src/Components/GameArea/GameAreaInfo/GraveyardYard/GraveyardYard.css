@@ -1,0 +1,21 @@
+.graveyard {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.graveyard .statuses {
+  font-size: 0.3rem;
+}
+
+.graveyard-icon-wrapper {
+  width: 2rem;
+  height: 2rem;
+}
+
+.graveyard p {
+  font-style: italic;
+}
