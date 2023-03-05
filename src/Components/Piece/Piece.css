@@ -1,0 +1,49 @@
+.light-piece,
+.dark-piece {
+  z-index: 3;
+}
+
+.light-piece.Basic {
+  color: var(--basic-light);
+}
+
+.dark-piece.Basic {
+  color: var(--basic-dark);
+}
+
+.light-piece.Scourge {
+  color: var(--scourge-light);
+}
+
+.dark-piece.Scourge {
+  color: var(--scourge-dark);
+}
+
+.light-piece.Crimson {
+  color: var(--crimson-light);
+}
+
+.dark-piece.Crimson {
+  color: var(--crimson-dark);
+}
+
+.statuses {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  padding: 0.2rem;
+  gap: 0.2rem;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  z-index: 4;
+}
+
+.poison {
+  color: greenyellow;
+}
+
+.blood {
+  color: red;
+}
