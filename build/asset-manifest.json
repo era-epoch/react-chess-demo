@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.67fa3135.css",
-    "main.js": "/static/js/main.dac9117f.js",
-    "static/js/787.070db070.chunk.js": "/static/js/787.070db070.chunk.js",
-    "index.html": "/index.html",
-    "main.67fa3135.css.map": "/static/css/main.67fa3135.css.map",
-    "main.dac9117f.js.map": "/static/js/main.dac9117f.js.map",
-    "787.070db070.chunk.js.map": "/static/js/787.070db070.chunk.js.map"
+    "main.css": "/react-chess-demo/static/css/main.ce4a993f.css",
+    "main.js": "/react-chess-demo/static/js/main.7dfd129d.js",
+    "static/js/787.93be87b6.chunk.js": "/react-chess-demo/static/js/787.93be87b6.chunk.js",
+    "index.html": "/react-chess-demo/index.html",
+    "main.ce4a993f.css.map": "/react-chess-demo/static/css/main.ce4a993f.css.map",
+    "main.7dfd129d.js.map": "/react-chess-demo/static/js/main.7dfd129d.js.map",
+    "787.93be87b6.chunk.js.map": "/react-chess-demo/static/js/787.93be87b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67fa3135.css",
-    "static/js/main.dac9117f.js"
+    "static/css/main.ce4a993f.css",
+    "static/js/main.7dfd129d.js"
   ]
 }

@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { GameJoinedEvent, GameCreatedEvent, PlayerJoinedGameEvent } from '../../../../../ws/events';
+import { GameJoinedEvent, GameCreatedEvent, PlayerJoinedGameEvent } from '../../../socketMiddleware';
 import { PlayerColour, UserInfo } from '../../../types';
 import { GameState } from '../game/slice';
 

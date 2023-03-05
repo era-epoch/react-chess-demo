@@ -1,82 +1,82 @@
-import produce from 'immer';
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { CreateGameEvent } from '../../../../../ws/events';
-import classicBoard from '../../../GameObjects/boards/classicBoard';
-import mirroredTestBoard from '../../../GameObjects/boards/mirroredTestBoard';
-import testBoard from '../../../GameObjects/boards/testBoard';
-import { wsCreateGame } from '../../../socketMiddleware';
-import { toggleCreateGameMenu } from '../../../state/slices/ui/slice';
-import { Board, PlayerColour } from '../../../types';
-import { ws_url } from '../../LeftBar/LeftBar';
-import BoardPreview from '../BoardPreview/BoardPreview';
+// import produce from 'immer';
+// import React, { useState } from 'react';
+// import { useDispatch } from 'react-redux';
+// import { CreateGameEvent } from '../../../../../ws/events';
+// import classicBoard from '../../../GameObjects/boards/classicBoard';
+// import mirroredTestBoard from '../../../GameObjects/boards/mirroredTestBoard';
+// import testBoard from '../../../GameObjects/boards/testBoard';
+// import { wsCreateGame } from '../../../socketMiddleware';
+// import { toggleCreateGameMenu } from '../../../state/slices/ui/slice';
+// import { Board, PlayerColour } from '../../../types';
+// import { ws_url } from '../../LeftBar/LeftBar';
+// import BoardPreview from '../BoardPreview/BoardPreview';
 import './CreateOnlineMenu.css';
 
 const CreateOnlineMenu = (): JSX.Element => {
-  const [creatorColour, setCreatorColour] = useState<PlayerColour>(PlayerColour.random);
-  const [timedGame, setTimedGame] = useState(false);
-  const [gameTime, setGameTime] = useState(10);
-  const [board, setBoard] = useState<Board>(classicBoard);
-  const [gameType, setGameType] = useState('');
-  const [runeSpawns, setRuneSpawns] = useState(0); // TEMPORARY
-  const [playerName, setPlayerName] = useState('Player' + Math.random().toString().slice(-4, -1));
-  const dispatch = useDispatch();
+  // const [creatorColour, setCreatorColour] = useState<PlayerColour>(PlayerColour.random);
+  // const [timedGame, setTimedGame] = useState(false);
+  // const [gameTime, setGameTime] = useState(10);
+  // const [board, setBoard] = useState<Board>(classicBoard);
+  // const [gameType, setGameType] = useState('');
+  // const [runeSpawns, setRuneSpawns] = useState(0); // TEMPORARY
+  // const [playerName, setPlayerName] = useState('Player' + Math.random().toString().slice(-4, -1));
+  // const dispatch = useDispatch();
 
-  const createOnlineGame = () => {
-    dispatch(
-      wsCreateGame(ws_url, {
-        game: {
-          board: produce(board, () => {}),
-          turn: 0,
-          selectedRow: null,
-          selectedCol: null,
-          graveyards: [
-            { player: PlayerColour.light, contents: [] },
-            { player: PlayerColour.dark, contents: [] },
-          ],
-          lightRunes: 0,
-          darkRunes: 2,
-          winner: null,
-          creatorColour: creatorColour,
-          timedGame: timedGame,
-          gameTime: gameTime,
-          turnTimeBack: 1,
-          moveHistory: [],
-          lightRuneSpawns: runeSpawns,
-          darkRuneSpawns: runeSpawns,
-          runeDuration: 0,
-          runeSpawnTurn: 0,
-          activeAbility: '',
-          abilityActivatedFlag: false,
-          postTurnResolutionQueue: [],
-        },
-        playerName: playerName,
-      } as CreateGameEvent),
-    );
-    dispatch(toggleCreateGameMenu());
-  };
+  // const createOnlineGame = () => {
+  //   dispatch(
+  //     wsCreateGame(ws_url, {
+  //       game: {
+  //         board: produce(board, () => {}),
+  //         turn: 0,
+  //         selectedRow: null,
+  //         selectedCol: null,
+  //         graveyards: [
+  //           { player: PlayerColour.light, contents: [] },
+  //           { player: PlayerColour.dark, contents: [] },
+  //         ],
+  //         lightRunes: 0,
+  //         darkRunes: 2,
+  //         winner: null,
+  //         creatorColour: creatorColour,
+  //         timedGame: timedGame,
+  //         gameTime: gameTime,
+  //         turnTimeBack: 1,
+  //         moveHistory: [],
+  //         lightRuneSpawns: runeSpawns,
+  //         darkRuneSpawns: runeSpawns,
+  //         runeDuration: 0,
+  //         runeSpawnTurn: 0,
+  //         activeAbility: '',
+  //         abilityActivatedFlag: false,
+  //         postTurnResolutionQueue: [],
+  //       },
+  //       playerName: playerName,
+  //     } as CreateGameEvent),
+  //   );
+  //   dispatch(toggleCreateGameMenu());
+  // };
 
-  const handleCreatorColourChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    switch (event.target.value) {
-      case 'light':
-        setCreatorColour(PlayerColour.light);
-        break;
-      case 'dark':
-        setCreatorColour(PlayerColour.dark);
-        break;
-      default:
-        setCreatorColour(PlayerColour.random);
-    }
-  };
+  // const handleCreatorColourChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   switch (event.target.value) {
+  //     case 'light':
+  //       setCreatorColour(PlayerColour.light);
+  //       break;
+  //     case 'dark':
+  //       setCreatorColour(PlayerColour.dark);
+  //       break;
+  //     default:
+  //       setCreatorColour(PlayerColour.random);
+  //   }
+  // };
 
-  const handlePlayerNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setPlayerName(event.target.value);
-  };
+  // const handlePlayerNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setPlayerName(event.target.value);
+  // };
 
   return (
     <div className="menu-wrapper">
-      <p>Create Online Game</p>
-      <div className="menu-section player-name-select">
+      <p>Online Play Unavailable in Static Demo</p>
+      {/* <div className="menu-section player-name-select">
         <div className="menu-section-title">Your Name</div>
         <div className="menu-row">
           <input type="text" value={playerName} onChange={handlePlayerNameChange} />
@@ -135,11 +135,11 @@ const CreateOnlineMenu = (): JSX.Element => {
             <div className="board-preview-title">Scourge vs. Crimson (Mirrored)</div>
             <BoardPreview board={mirroredTestBoard} />
           </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div>
       <div className="ui-button major-button create-game-button" onClick={createOnlineGame}>
         Create Game
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -2,7 +2,7 @@
   "name": "react-client-demo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jacob-sahl.github.io/react-chess-demo", 
+  "homepage": "http://jacob-sahl.github.io/react-chess-demo",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
@@ -26,6 +26,7 @@
     "react-uid": "^2.3.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
+    "socket.io-client": "^4.5.1",
     "typescript": "^4.5.4",
     "web-vitals": "^2.1.2",
     "websocket": "^1.0.34"
